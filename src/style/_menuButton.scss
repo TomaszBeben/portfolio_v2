@@ -16,7 +16,6 @@
     top: 85vh;
     &:active {
         transform: scale(1.1);
-        transform: rotate(45deg);
     }
 }
 
@@ -29,8 +28,18 @@
     box-shadow: 0 0 1em white;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
 .rotate {
     animation-name: rotate;
+    animation-duration: 0.3s;
 }
 
 .dot-2 {
