@@ -1,0 +1,18 @@
+@mixin imgShape {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+a {
+    @include imgShape;
+}
+
+.nav-elements-elem {
+    @include imgShape;
+}
+
+.github {
+    background-image: url(../images/github-logo.png);
+}

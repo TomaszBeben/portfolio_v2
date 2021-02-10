@@ -1,7 +1,7 @@
 import React from 'react';
 
+import DraggableTest from './components/DraggableTest'
 import MenuButton from './components/MenuButton';
-// import Count from './components/Count';
 
 const random = (num) => Math.floor(Math.random() * num);
 
@@ -29,10 +29,12 @@ const App = () => {
   };
 
   return (
+    <>
     <div className='main--Page--Background' style={style}>
       <MenuButton/>
-      {/* <Count /> */}
     </div>
+    <DraggableTest/>
+    </>
   );
 };
 
