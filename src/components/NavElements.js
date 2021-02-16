@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 const elements =[
     {id:1, mainClass: 'nav-elements-elem', indywidualClass:'github'},
@@ -10,10 +10,6 @@ const elements =[
 ]
 
 const NavElements = (props) => {
-    // const show = 'nav-elements-container'
-    // const hide = 'nav-elements-container nav-elements-hide'
-    // const[elemHide, setElemHide]= useState(hide)
-    // const toggle = () => elemHide === hide ? setElemHide(show) : setElemHide(hide)
     return (
         <>
         <div className={props.props}>

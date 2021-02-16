@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DraggableTest from './components/DraggableTest'
+import ContentFolder from './components/ContentFolder'
 import MenuButton from './components/MenuButton';
 
 const random = (num) => Math.floor(Math.random() * num);
@@ -30,10 +30,10 @@ const App = () => {
 
   return (
     <>
-    <div className='main--Page--Background' style={style}>
-      <MenuButton/>
-    </div>
-    <DraggableTest/>
+      <div className='main--Page--Background' style={style}>
+        <MenuButton />
+      </div>
+      <ContentFolder />
     </>
   );
 };
