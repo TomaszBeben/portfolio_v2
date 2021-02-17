@@ -6,7 +6,7 @@ const elements =[
     {id:3, mainClass: 'nav-elements-elem', indywidualClass:'mailing'},
     {id:4, mainClass: 'nav-elements-elem', indywidualClass:'linkedIn'},
     {id:5, mainClass: 'nav-elements-elem', indywidualClass:'about'},
-    {id:6, mainClass: 'nav-elements-elem', indywidualClass:'projects'}
+    {id:6, mainClass: 'nav-elements-elem', indywidualClass:'projects'},
 ]
 
 const NavElements = (props) => {

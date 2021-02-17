@@ -1,6 +1,6 @@
 @mixin imgShape {
-    width: 8vh !important;
-    height: 8vh !important;
+    width: 9vh !important;
+    height: 9vh !important;
     border-radius: 50%;
     background-size: cover;
     cursor: pointer;
@@ -23,18 +23,19 @@
     position: absolute;
     filter: grayscale(1);
     background-image: url(../images/github-logo.png);
-    animation-name: moveG;
+    animation-name: moveGit;
     animation-duration: 0.36s;
     animation-fill-mode: forwards;
-    @keyframes moveG {
+    @keyframes moveGit {
         0% {
             position: absolute;
-            bottom: -500%;
+            right: 50%;
+            bottom: -100%;
         }
         100% {
             position: absolute;
             bottom: 10%;
-            left: 25%;
+            left: 5%;
         }
     }
 }
@@ -48,33 +49,34 @@
         box-shadow: 0 0 1em black;
     }
     animation-name: moveCV;
-    animation-duration: 0.31s;
+    animation-duration: 0.45s;
     animation-fill-mode: forwards;
     @keyframes moveCV {
         0% {
-            bottom: -500%;
+            bottom: -100%;
         }
         100% {
-            bottom: 45%;
-            left: 20%;
+            bottom: 38%;
+            left: 11%;
         }
     }
 }
 
-.mailing {
+.about {
     position: absolute;
-    filter: grayscale(1);
-    background-image: url(../images/mailing.jpg);
-    animation-name: moveM;
-    animation-duration: 0.39s;
+    bottom: 70%;
+    left: 33%;
+    background-image: url(../images/person.jpg);
+    animation-name: moveAbout;
+    animation-duration: 0.36s;
     animation-fill-mode: forwards;
-    @keyframes moveM {
+    @keyframes moveAbout {
         0% {
-            bottom: -500%;
+            bottom: -100%;
         }
         100% {
-            bottom: 45%;
-            right: 20%;
+            bottom: 55%;
+            left: 30%;
         }
     }
 }
@@ -85,35 +87,34 @@
     right: 33%;
     filter: grayscale(1);
     background-image: url(../images/linkedin-img.jpg);
-    animation-name: moveL;
-    animation-duration: 0.33s;
+    animation-name: moveLinkedIn;
+    animation-duration: 0.22s;
     animation-fill-mode: forwards;
-    @keyframes moveL {
+    @keyframes moveLinkedIn {
         0% {
             bottom: -500%;
         }
         100% {
-            bottom: 70%;
-            right: 33%;
+            bottom: 55%;
+            right: 30%;
         }
     }
 }
 
-.about {
+.mailing {
     position: absolute;
-    bottom: 70%;
-    left: 33%;
-    background-image: url(../images/person.jpg);
-    animation-name: moveA;
-    animation-duration: 0.36s;
+    filter: grayscale(1);
+    background-image: url(../images/mailing.jpg);
+    animation-name: moveMailing;
+    animation-duration: 0.39s;
     animation-fill-mode: forwards;
-    @keyframes moveA {
+    @keyframes moveMailing {
         0% {
             bottom: -500%;
         }
         100% {
-            bottom: 70%;
-            left: 33%;
+            bottom: 38%;
+            right: 11%;
         }
     }
 }
@@ -124,19 +125,37 @@
     right: 25%;
     background-color: white;
     background-image: url(../images/project.png);
-    animation-name: move;
-    animation-duration: 0.31s;
-    @keyframes move {
+    animation-name: moveProjects;
+    animation-duration: 0.42s;
+    animation-fill-mode: forwards;
+    @keyframes moveProjects {
         0% {
-            bottom: -500%;
+            bottom: -100%;
         }
         100% {
             bottom: 10%;
-            right: 25%;
+            right: 5%;
         }
     }
 }
 
+// .chat {
+//     position: absolute;
+//     filter: grayscale(1);
+//     background-image: url(../images/chat.png);
+//     animation-name: moveC;
+//     animation-duration: 0.39s;
+//     animation-fill-mode: forwards;
+//     @keyframes moveC {
+//         0% {
+//             bottom: -500%;
+//         }
+//         100% {
+//             bottom: 50%;
+//             right: 40%;
+//         }
+//     }
+// }
 .nav-elements-hide {
     display: none;
 }

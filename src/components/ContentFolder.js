@@ -1,5 +1,7 @@
 import React from 'react'
 import Draggable, { DraggableCore } from 'react-draggable';
+console.log(window.outerHeight);
+console.log(window.outerWidth);
 
 const ContentFolder = () => {
     return (
