@@ -1,6 +1,10 @@
 @mixin imgShape {
     width: 9vh !important;
     height: 9vh !important;
+    @media (min-width: 550px) {
+        width: 10vh !important;
+        height: 10vh !important;
+    }
     border-radius: 50%;
     background-size: cover;
     cursor: pointer;
@@ -13,6 +17,10 @@
 .nav-elements-container {
     display: flex;
     flex-direction: row;
+    width: 400px !important;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
 }
 
 .nav-elements-elem {
@@ -28,13 +36,11 @@
     animation-fill-mode: forwards;
     @keyframes moveGit {
         0% {
-            position: absolute;
-            right: 50%;
-            bottom: -100%;
+            top: 100%;
+            left: 5%;
         }
         100% {
-            position: absolute;
-            bottom: 10%;
+            top: 70%;
             left: 5%;
         }
     }
@@ -53,10 +59,11 @@
     animation-fill-mode: forwards;
     @keyframes moveCV {
         0% {
-            bottom: -100%;
+            top: 100%;
+            left: 11%;
         }
         100% {
-            bottom: 38%;
+            top: 43%;
             left: 11%;
         }
     }
@@ -64,27 +71,24 @@
 
 .about {
     position: absolute;
-    bottom: 70%;
-    left: 33%;
     background-image: url(../images/person.jpg);
     animation-name: moveAbout;
     animation-duration: 0.36s;
     animation-fill-mode: forwards;
     @keyframes moveAbout {
         0% {
-            bottom: -100%;
+            top: 100%;
+            left: 23%;
         }
         100% {
-            bottom: 55%;
-            left: 30%;
+            top: 25%;
+            left: 28%;
         }
     }
 }
 
 .linkedIn {
     position: absolute;
-    bottom: 70%;
-    right: 33%;
     filter: grayscale(1);
     background-image: url(../images/linkedin-img.jpg);
     animation-name: moveLinkedIn;
@@ -92,11 +96,12 @@
     animation-fill-mode: forwards;
     @keyframes moveLinkedIn {
         0% {
-            bottom: -500%;
+            top: 100%;
+            right: 28%;
         }
         100% {
-            bottom: 55%;
-            right: 30%;
+            top: 25%;
+            right: 27%
         }
     }
 }
@@ -110,10 +115,11 @@
     animation-fill-mode: forwards;
     @keyframes moveMailing {
         0% {
-            bottom: -500%;
+            top: 100%;
+            right: 11%;
         }
         100% {
-            bottom: 38%;
+            top: 43%;
             right: 11%;
         }
     }
@@ -130,10 +136,11 @@
     animation-fill-mode: forwards;
     @keyframes moveProjects {
         0% {
-            bottom: -100%;
+            top: 100%;
+            right: 5%;
         }
         100% {
-            bottom: 10%;
+            top: 70%;
             right: 5%;
         }
     }
