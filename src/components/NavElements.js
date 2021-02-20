@@ -1,7 +1,7 @@
 import React from 'react'
 
 const elements =[
-    {id:1, mainClass: 'nav-elements-elem', indywidualClass:'github'},
+    {id:1, mainClass: 'nav-elements-elem', indywidualClass:'github', },
     {id:2, mainClass: 'nav-elements-elem', indywidualClass:'cv'},
     {id:3, mainClass: 'nav-elements-elem', indywidualClass:'mailing'},
     {id:4, mainClass: 'nav-elements-elem', indywidualClass:'linkedIn'},
@@ -12,9 +12,9 @@ const elements =[
 const NavElements = (props) => {
     return (
         <>
-        <div className={props.props}>
+        <div className={props.show}>
         {elements.map((elem)=>(
-            <div key={elem.id} className={elem.mainClass +' '+ elem.indywidualClass}></div>
+            <div key={elem.id} className={elem.mainClass +' '+ elem.indywidualClass} onClick={props.click}></div>
         ))}
         </div>
         </>

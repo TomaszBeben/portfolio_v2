@@ -23,12 +23,12 @@ const MenuButton = () => {
     const show = 'nav-elements-container'
     const hide = 'nav-elements-container nav-elements-hide'
     const[elemHide, setElemHide]= useState(hide)
-    const toggle = () => elemHide === hide ? setElemHide(show) : setElemHide(hide)
+    const toggle = (state, arg1, arg2) => state === arg1 ? setElemHide(arg2) : setElemHide(arg1)
 
     return (
         <div className='menu-nav-container'>
-            <NavElements props={elemHide}/>
-            <div className={rotate} onClick={()=>{rotateCall(); toggle()}}>
+            <NavElements show={elemHide} click={()=>toggle(elemHide, hide, show)}/>
+            <div className={rotate} onClick={()=>{rotateCall(); toggle(elemHide, hide, show)}}>
                 <div className='menu-dots dot-1'></div>
                 <div className='menu-dots dot-2'></div>
                 <div className='menu-dots dot-3'></div>

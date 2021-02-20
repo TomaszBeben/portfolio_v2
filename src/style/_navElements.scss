@@ -1,9 +1,9 @@
 @mixin imgShape {
-    width: 9vh !important;
-    height: 9vh !important;
-    @media (min-width: 550px) {
-        width: 10vh !important;
-        height: 10vh !important;
+    width: 8vh !important;
+    height: 8vh !important;
+    @media (max-width: 550px) {
+        width: 11vh !important;
+        height: 11vh !important;
     }
     border-radius: 50%;
     background-size: cover;
@@ -68,7 +68,7 @@
         }
         100% {
             top: 43%;
-            left: 11%;
+            left: 10%;
         }
     }
 }
@@ -85,7 +85,7 @@
             left: 23%;
         }
         100% {
-            top: 25%;
+            top: 26%;
             left: 28%;
         }
     }
@@ -104,7 +104,7 @@
             right: 28%;
         }
         100% {
-            top: 25%;
+            top: 26%;
             right: 27%
         }
     }
@@ -120,11 +120,11 @@
     @keyframes moveMailing {
         0% {
             top: 100%;
-            right: 11%;
+            right: 10%;
         }
         100% {
             top: 43%;
-            right: 11%;
+            right: 10%;
         }
     }
 }

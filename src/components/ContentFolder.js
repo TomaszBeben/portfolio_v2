@@ -5,11 +5,10 @@ const ContentFolder = () => {
     return (
         <>
             <div className='content-folder-area'>
-                <Draggable handle='.top' defaultPosition={{ x: 50, y: 100 }} bounds='.content-folder-area'>
+                <Draggable handle='.content-folder-toolbar' defaultPosition={{ x: 50, y: 100 }} bounds='.main--Page--Background'>
                     <div className='draggable-library'>
-                        <div className='top'></div>
-                        <div className='bottom'></div>
-                        <button></button>
+                        <div className='content-folder-toolbar'></div>
+                        <div className='content-folder-content'></div>
                     </div>
                 </Draggable>
             </div>
