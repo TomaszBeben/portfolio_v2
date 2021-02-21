@@ -1,20 +1,21 @@
 .content-folder-area {
     width: 100%;
     height: 80vh;
-    display: none; ///hiding
 }
 
 .draggable-library {
     width: 400px;
-    border: 2px solid white;
     border-radius: 10px;
 }
 
 .content-folder-toolbar {
     border-radius: 10px;
     width: 400px;
-    height: 50px;
+    height: 30px;
     background-color: black;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .content-folder-content {
@@ -22,4 +23,17 @@
     width: 400px;
     height: 400px;
     background-color: red;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.content-folder-resize-handle {
+    position: absolute;
+    left: 95%;
+    top: 95%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px double white;
+    border-bottom: 2px double white;
 }
