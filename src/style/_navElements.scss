@@ -1,10 +1,6 @@
 @mixin imgShape {
     width: 8vh !important;
     height: 8vh !important;
-    @media (max-width: 550px) {
-        width: 11vh !important;
-        height: 11vh !important;
-    }
     border-radius: 50%;
     background-size: cover;
     cursor: pointer;
@@ -17,14 +13,14 @@
 .nav-elements-container {
     display: flex;
     flex-direction: row;
-    width: 500px !important;
+    width: 96% !important;
     height: 100%;
-    @media (min-width: 900px) {
-        width: 900px !important;
-        height: 100%;
-    }
     position: absolute;
     border: 1px solid black;
+    @media only (min-width: 990px) {
+        width: 35% !important;
+        height: 100%;
+    }
 }
 
 .nav-elements-elem {
@@ -64,11 +60,11 @@
     @keyframes moveCV {
         0% {
             top: 100%;
-            left: 11%;
+            left: 12%;
         }
         100% {
-            top: 43%;
-            left: 10%;
+            top: 41%;
+            left: 12%;
         }
     }
 }
@@ -82,11 +78,11 @@
     @keyframes moveAbout {
         0% {
             top: 100%;
-            left: 23%;
+            left: 30%;
         }
         100% {
-            top: 26%;
-            left: 28%;
+            top: 22%;
+            left: 30%;
         }
     }
 }
@@ -101,11 +97,11 @@
     @keyframes moveLinkedIn {
         0% {
             top: 100%;
-            right: 28%;
+            right: 30%;
         }
         100% {
-            top: 26%;
-            right: 27%
+            top: 22%;
+            right: 30%
         }
     }
 }
@@ -120,11 +116,11 @@
     @keyframes moveMailing {
         0% {
             top: 100%;
-            right: 10%;
+            right: 12%;
         }
         100% {
-            top: 43%;
-            right: 10%;
+            top: 41%;
+            right: 12%;
         }
     }
 }

@@ -33,7 +33,7 @@ const App = () => {
       <div className='main--Page--Background' style={style}>
         <MenuButton />
       </div>
-      <ContentFolder />
+      {/* <ContentFolder /> */}
     </>
   );
 };
