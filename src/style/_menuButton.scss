@@ -9,6 +9,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .menu-square {
@@ -24,6 +25,7 @@
     &:active * {
         transform: scale(1.1);
         box-shadow: 0 0 1em white;
+        opacity: 1;
     }
 }
 
@@ -33,6 +35,7 @@
     background-color: white;
     border-radius: 50%;
     position: relative;
+    opacity: 0.5;
 }
 
 @keyframes rotate {

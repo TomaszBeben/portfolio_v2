@@ -17,7 +17,7 @@
     height: 100%;
     position: absolute;
     border: 1px solid black;
-    @media only (min-width: 990px) {
+    @media (min-width: 990px) {
         width: 35% !important;
         height: 100%;
     }
@@ -146,23 +146,6 @@
     }
 }
 
-// .chat {
-//     position: absolute;
-//     filter: grayscale(1);
-//     background-image: url(../images/chat.png);
-//     animation-name: moveC;
-//     animation-duration: 0.39s;
-//     animation-fill-mode: forwards;
-//     @keyframes moveC {
-//         0% {
-//             bottom: -500%;
-//         }
-//         100% {
-//             bottom: 50%;
-//             right: 40%;
-//         }
-//     }
-// }
 .nav-elements-hide {
     display: none;
 }

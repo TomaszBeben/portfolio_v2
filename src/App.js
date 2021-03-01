@@ -1,6 +1,5 @@
 import React from 'react';
 
-import ContentFolder from './components/ContentFolder'
 import MenuButton from './components/MenuButton';
 
 const random = (num) => Math.floor(Math.random() * num);
@@ -33,7 +32,6 @@ const App = () => {
       <div className='main--Page--Background' style={style}>
         <MenuButton />
       </div>
-      {/* <ContentFolder /> */}
     </>
   );
 };

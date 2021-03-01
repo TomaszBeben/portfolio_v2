@@ -1,24 +1,19 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 import Draggable from 'react-draggable';
 import FolderCard from './FolderCard';
 
-import {toggle} from './ToggleFunction';
 
 const ContentFolder = (props) => {
-    const hideElem = 'content-folder-area hide'
-    const showElem = 'content-folder-area'
-    const [isVisible, setVisible] = useState('content-folder-area')
 
     return (
         <>
-            <div className={isVisible}>
+            <div className={props.isVisible}>
                 <Draggable handle='.content-folder-toolbar' defaultPosition={{ x: 10, y: 10 }} bounds='.main--Page--Background'>
                     <div className='draggable-library'>
                         <div className='content-folder-toolbar'>
-                            <div className='content-folder-toolbar-nav'>_</div>
                             <div className='content-folder-toolbar-nav'>[]</div>
-                            <div className='content-folder-toolbar-nav' onClick={()=>toggle(isVisible, setVisible, hideElem, showElem)}>x</div>
+                            <div className='content-folder-toolbar-nav' onClick={props.hideContentFolder}>x</div>
                         </div>
                         <div className='content-folder-content'>
                             <FolderCard/>

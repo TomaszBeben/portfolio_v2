@@ -1,5 +1,7 @@
 import React from 'react'
 
+// import ContentFolder from './ContentFolder';
+
 const elements = [
     { id: 1, mainClass: 'nav-elements-elem', indywidualClass: 'github', },
     { id: 2, mainClass: 'nav-elements-elem', indywidualClass: 'cv' },
@@ -11,7 +13,6 @@ const elements = [
 
 const NavElements = (props) => {
 
-
     return (
         <>
             <div className={props.show}>
@@ -20,7 +21,6 @@ const NavElements = (props) => {
                         key={elem.id}
                         className={elem.mainClass + ' ' + elem.indywidualClass}
                         onClick={props.click}
-                        onChange={props.showFolder}
                     ></div>
                 ))}
             </div>
