@@ -25,7 +25,7 @@ const MenuButton = () => {
     }
 
     const show = 'nav-elements-container'
-    const hide = 'nav-elements-container nav-elements-hide'
+    const hide = 'nav-elements-container hide'
     const [elemHide, setElemHide] = useState(hide)
 
     const hideElem = 'content-folder-area hide'
@@ -36,10 +36,10 @@ const MenuButton = () => {
         <>
             <div className='menu-nav-container'>
                 <NavElements
-                        show={elemHide}
-                        click={() => {
-                            toggle(elemHide, setElemHide, hide, show)
-                            setVisible(showElem)
+                    show={elemHide}
+                    click={() => {
+                        toggle(elemHide, setElemHide, hide, show)
+                        setVisible(showElem)
                     }}
                 />
                 <div className={rotate} onClick={() => {

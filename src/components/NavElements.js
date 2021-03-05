@@ -1,7 +1,5 @@
 import React from 'react'
 
-// import ContentFolder from './ContentFolder';
-
 const elements = [
     { id: 1, mainClass: 'nav-elements-elem', indywidualClass: 'github', },
     { id: 2, mainClass: 'nav-elements-elem', indywidualClass: 'cv' },

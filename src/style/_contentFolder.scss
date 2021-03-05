@@ -1,5 +1,5 @@
 .content-folder-area {
-    width: 100%;
+    width: 100vw;
     height: 80vh;
 }
 
@@ -41,4 +41,10 @@
     margin-left: 2px;
     margin-right: 2px;
     cursor: pointer;
+}
+
+.test {
+    //////// rename this class!!!!!!
+    width: 100vw !important;
+    transform: translate(0, 0);
 }
