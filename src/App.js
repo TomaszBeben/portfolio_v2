@@ -1,8 +1,7 @@
 import React from 'react';
 
 import MenuButton from './components/MenuButton';
-
-const random = (num) => Math.floor(Math.random() * num);
+import { random } from './components/GlobalFunction';
 
 const background = `linear-gradient(
   ${random(360)}deg,

@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 
 import Draggable from 'react-draggable';
 
-import { toggle } from './ToggleFunction';
+import Content from './Content'
+
+import { toggle, random } from './GlobalFunction';
 
 
 const ContentFolder = (props) => {
-    const random = (num) => Math.floor(Math.random() * num);
 
     const fullScreen = 'content-folder-folder-full-screen';
-    const [resize, setResize] = useState('content-folder-folder');// opakować w diva i zmienić style
+    const [resize, setResize] = useState('content-folder-folder');
 
     return (
         <>
@@ -17,7 +18,7 @@ const ContentFolder = (props) => {
                 <Draggable
                     handle='.content-folder-toolbar'
                     defaultPosition={
-                        { x: random(window.innerWidth - 400), y: random(window.innerHeight - 400) }}
+                        { x: random(window.innerWidth - 500), y: random(window.innerHeight - 500) }}
                     bounds='.main--Page--Background'>
                     <div className={resize}>
                         <div className='draggable-library'>
@@ -26,6 +27,7 @@ const ContentFolder = (props) => {
                                 <div className='content-folder-toolbar-nav' onClick={props.hideContentFolder}>x</div>
                             </div>
                             <div className='content-folder-content'>
+                                <Content/>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import ContentFolder from './ContentFolder'
 import NavElements from './NavElements';
-import { toggle } from './ToggleFunction';
+import { toggle } from './GlobalFunction';
 
 const MenuButton = () => {
     const [rotate, setRotate] = useState('menu-square')
