@@ -22,7 +22,7 @@ const ContentFolder = (props) => {
                     bounds='.main--Page--Background'>
                     <div className={resize}>
                         <div className='draggable-library'>
-                            <div className='content-folder-toolbar'>
+                            <div className='content-folder-toolbar' onDoubleClick={() => { toggle(resize, setResize, fullScreen, 'content-folder-folder') }}>
                                 <div className='content-folder-toolbar-nav' onClick={() => { toggle(resize, setResize, fullScreen, 'content-folder-folder') }}>[]</div>
                                 <div className='content-folder-toolbar-nav' onClick={props.hideContentFolder}>x</div>
                             </div>
