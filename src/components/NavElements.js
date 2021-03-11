@@ -21,9 +21,8 @@ const NavElements = (props) => {
             <HashRouter>
                 <div className={props.show}>
                     {elements.map((elem) => (
-                        <Link to={elem.route}>
+                        <Link key={elem.id} to={elem.route}>
                             <div
-                                key={elem.id}
                                 className={elem.mainClass + ' ' + elem.indywidualClass}
                                 onClick={props.click}
                             ></div>

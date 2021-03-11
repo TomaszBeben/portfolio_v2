@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MenuButton from './components/MenuButton';
+import Test from './components/Test'
 import { random } from './components/GlobalFunction';
 
 const background = `linear-gradient(
@@ -30,6 +31,7 @@ const App = () => {
     <>
       <div className='main--Page--Background' style={style}>
         <MenuButton />
+        <Test/>
       </div>
     </>
   );
