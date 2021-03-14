@@ -1,0 +1,29 @@
+@import './mixins.scss';
+.header {
+    width: 100%;
+    height: 50px; //test
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.link-shape {
+    @include imgShape;
+    position: relative;
+    bottom: 6vh;
+    margin: 1vh;
+}
+
+.github-link {
+    filter: grayscale(1);
+    background-image: url(../images/github-logo.png);
+}
+
+.linkedin-link {
+    background-image: url(../images/linkedin-img.jpg);
+}

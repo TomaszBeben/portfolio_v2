@@ -6,13 +6,9 @@ import GithubComponent from './ContentComponents/GithubComponent'
 import LinkedInComponent from './ContentComponents/LinkedInComponent'
 import MailingComponent from './ContentComponents/MailingComponent'
 import ProjectsComponent from './ContentComponents/ProjectsComponent'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
-
-import {
-    HashRouter,
-    Switch,
-    Route,
-  } from 'react-router-dom'
+// const githubLink= 'https://github.com/TomaszBeben'
 
 const Content = () => {
     return (

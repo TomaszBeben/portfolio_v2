@@ -6,12 +6,10 @@ import {
 } from "react-router-dom";
 
 const elements = [
-    { id: 1, mainClass: 'nav-elements-elem', indywidualClass: 'github', route: '/github' },
-    { id: 2, mainClass: 'nav-elements-elem', indywidualClass: 'cv', route: '/cv' },
-    { id: 3, mainClass: 'nav-elements-elem', indywidualClass: 'mailing', route: '/mailing' },
-    { id: 4, mainClass: 'nav-elements-elem', indywidualClass: 'linkedIn', route: '/linkedin' },
-    { id: 5, mainClass: 'nav-elements-elem', indywidualClass: 'about', route: '/about' },
-    { id: 6, mainClass: 'nav-elements-elem', indywidualClass: 'projects', route: '/projects' },
+    { id: 1, mainClass: 'nav-elements-elem', indywidualClass: 'cv', route: '/cv' },
+    { id: 2, mainClass: 'nav-elements-elem', indywidualClass: 'mailing', route: '/mailing' },
+    { id: 3, mainClass: 'nav-elements-elem', indywidualClass: 'projects', route: '/projects' },
+    { id: 4, mainClass: 'nav-elements-elem', indywidualClass: 'about', route: '/about' },
 ]
 
 const NavElements = (props) => {

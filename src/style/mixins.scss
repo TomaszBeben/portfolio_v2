@@ -1,0 +1,11 @@
+@mixin imgShape {
+    width: 8vh !important;
+    height: 8vh !important;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 1em white;
+    }
+}
