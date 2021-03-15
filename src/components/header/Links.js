@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 
 const Links = () => {
-    const[animGit, setAnimGit]= useState('link-shape github-link')
-    const[animLinkedin, setAnimLinkedin]= useState('link-shape linkedin-link')
+    const[animGit, setAnimGit]= useState('link-shape github-link anim-linkF')
+    const[animLinkedin, setAnimLinkedin]= useState('link-shape linkedin-link anim-link')
 
     return (
         <div className='header-links'>

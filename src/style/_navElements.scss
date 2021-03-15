@@ -5,7 +5,6 @@
     width: 96% !important;
     height: 100%;
     position: absolute;
-    // border: 1px solid black;
     @media (min-width: 990px) {
         width: 35% !important;
         height: 100%;
@@ -16,24 +15,6 @@
     @include imgShape;
 }
 
-// .github {
-//     position: absolute;
-//     filter: grayscale(1);
-//     background-image: url(../images/github-logo.png);
-//     animation-name: moveGit;
-//     animation-duration: 0.36s;
-//     animation-fill-mode: forwards;
-//     @keyframes moveGit {
-//         0% {
-//             top: 100%;
-//             left: 5%;
-//         }
-//         100% {
-//             top: 70%;
-//             left: 5%;
-//         }
-//     }
-// }
 .cv {
     position: absolute;
     filter: grayscale(1) invert(1);
@@ -48,6 +29,10 @@
     @keyframes moveCV {
         0% {
             top: 100%;
+            left: 12%;
+        }
+        50% {
+            top: 35%;
             left: 12%;
         }
         100% {
@@ -66,6 +51,10 @@
     @keyframes moveAbout {
         0% {
             top: 100%;
+            left: 30%;
+        }
+        50% {
+            top: 16%;
             left: 30%;
         }
         100% {
@@ -88,6 +77,10 @@
             top: 100%;
             right: 30%;
         }
+        50% {
+            top: 18%;
+            right: 30%
+        }
         100% {
             top: 22%;
             right: 30%
@@ -107,30 +100,13 @@
             top: 100%;
             right: 12%;
         }
+        50% {
+            top: 35%;
+            right: 12%;
+        }
         100% {
             top: 41%;
             right: 12%;
-        }
-    }
-}
-
-.projectsOLD {
-    position: absolute;
-    bottom: 10%;
-    right: 25%;
-    background-color: white;
-    background-image: url(../images/project.png);
-    animation-name: moveProjectsOLD;
-    animation-duration: 0.42s;
-    animation-fill-mode: forwards;
-    @keyframes moveProjectsOLD {
-        0% {
-            top: 100%;
-            right: 5%;
-        }
-        100% {
-            top: 70%;
-            right: 5%;
         }
     }
 }
