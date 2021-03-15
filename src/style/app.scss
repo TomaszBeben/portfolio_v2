@@ -1,5 +1,8 @@
 html {
     width: 100vw !important;
+    &::selection {
+        outline: none;
+    }
 }
 
 .main--Page--Background {
