@@ -1,13 +1,10 @@
-import React,{useState} from 'react'
+import React from 'react'
 
 const Links = () => {
-    const[animGit, setAnimGit]= useState('link-shape github-link anim-linkF')
-    const[animLinkedin, setAnimLinkedin]= useState('link-shape linkedin-link anim-link')
-
     return (
         <div className='header-links'>
-            <a className={animGit} href="https://github.com/TomaszBeben"></a>
-            <a className={animLinkedin} href="https://www.linkedin.com/in/tomasz-bęben-1944021a2/"></a>
+            <a className='link-shape github-link anim-linkF' href="https://github.com/TomaszBeben"></a>
+            <a className='link-shape linkedin-link anim-link' href="https://www.linkedin.com/in/tomasz-bęben-1944021a2/"></a>
         </div>
     )
 }

@@ -2,7 +2,6 @@ import React from 'react';
 
 import Header from './components/header/Header'
 import MenuButton from './components/MenuButton';
-import Test from './components/test/Test'
 import { random } from './components/GlobalFunction';
 
 const background = `linear-gradient(
@@ -24,16 +23,15 @@ const background = `linear-gradient(
 
 const App = () => {
 
-  const style = {
+  const randomColor = {
     background: `${background}`
   };
 
   return (
     <>
-      <div className='main--Page--Background' style={style}>
+      <div className='main--Page--Background' style={randomColor}>
         <Header/>
         <MenuButton />
-        {/* <Test/> */}
       </div>
     </>
   );
