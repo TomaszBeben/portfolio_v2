@@ -1,23 +1,36 @@
-import React from 'react'
-import { ResizableBox } from 'react-resizable';
-import Handle from './Handle';
-import Draggable from 'react-draggable';
-import Toolbar from './Toolbar'
-import {random} from '../GlobalFunction'
+import React from "react";
+import { Rnd } from "react-rnd";
 
-const Test = () => {
-    return (
-        <>
-        <ResizableBox className='test' width={200} height={200}
-            minConstraints={[100, 100]} maxConstraints={[300, 300]} handle={Handle} style={null}>
-                <Draggable  handle={Toolbar} defaultPosition={
-                        { x: random(window.innerWidth - 500), y: random(window.innerHeight - 500) }}
-                    bounds='.main--Page--Background'>
-                        <div></div>
-                    </Draggable>
-        </ResizableBox>
-        </>
-    )
-}
+import CVComponent from "../ContentComponents/CVComponent";
+import Toolbar from "../test/Toolbar";
 
-export default Test
+
+const style = {
+  display: "flex",
+  flexDirection: 'column',
+  border: "solid 1px #ddd",
+  background: "#f0f0f0",
+  zIndex: '5'
+};
+
+const Test = () => (
+  <Rnd
+    style={style}
+    default={{
+        x: 10,
+        y: 0,
+        width: 320,
+        height: 200,
+    }}
+    minWidth={300}
+    minHeight={300}
+    bounds='window'
+    dragHandleClassName='toolbar-test'
+  >
+    <Toolbar/>
+    <CVComponent/>
+  </Rnd>
+);
+
+export default Test;
+

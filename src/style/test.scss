@@ -19,4 +19,18 @@
     height: 20px;
     width: 100%;
     background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toolbar-fullscreen {
+    height: 20px;
+    width: 50px;
+    background-color: yellowgreen;
+}
+
+.toolbar-exit {
+    height: 20px;
+    width: 50px;
+    background-color: red;
 }

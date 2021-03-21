@@ -4,6 +4,8 @@ import Header from './components/header/Header'
 import MenuButton from './components/MenuButton';
 import { random } from './components/GlobalFunction';
 
+import Test from './components/test/Test'
+
 const background = `linear-gradient(
   ${random(360)}deg,
   rgba(
@@ -32,6 +34,7 @@ const App = () => {
       <div className='main--Page--Background' style={randomColor}>
         <Header/>
         <MenuButton />
+        <Test/>
       </div>
     </>
   );
