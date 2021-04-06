@@ -2,9 +2,11 @@
 .nav-elements-container {
     display: flex;
     flex-direction: row;
-    width: 96% !important;
+    width: 95% !important;
     height: 100%;
     position: absolute;
+    z-index: 9;
+    // border: 1px solid black;
     @media (min-width: 990px) {
         width: 35% !important;
         height: 100%;
@@ -110,3 +112,26 @@
         }
     }
 }
+
+// .github {
+//     position: relative;
+//     filter: grayscale(1);
+//     background-image: url(../images/mailing.jpg);
+//     animation-name: moveGit;
+//     animation-duration: 0.39s;
+//     animation-fill-mode: forwards;
+//     @keyframes moveGit {
+//         0% {
+//             top: 50%;
+//             right: 50%;
+//         }
+//         50% {
+//             top: 50%;
+//             right: 50%;
+//         }
+//         100% {
+//             top: -10%;
+//             right: 0%;
+//         }
+//     }
+// }

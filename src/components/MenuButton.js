@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 
-import ContentFolder from './ContentFolder'
 import NavElements from './NavElements';
 import { toggle } from './GlobalFunction';
 
-const MenuButton = () => {
+const MenuButton = (props) => {
     const [rotate, setRotate] = useState('menu-square')
-
-    functionRotate();
 
     function functionRotate() {
         return new Promise(
@@ -28,10 +25,6 @@ const MenuButton = () => {
     const hide = 'nav-elements-container hide'
     const [elemHide, setElemHide] = useState(hide)
 
-    const hideElem = 'content-folder-area hide'
-    const showElem = 'content-folder-area'
-    const [isVisible, setVisible] = useState('content-folder-area hide')
-
     return (
         <>
             <div className='menu-nav-container'>
@@ -39,12 +32,12 @@ const MenuButton = () => {
                     show={elemHide}
                     click={() => {
                         toggle(elemHide, setElemHide, hide, show)
-                        setVisible(showElem)
                     }}
                 />
                 <div className={rotate} onClick={() => {
                     rotateCall()
                     toggle(elemHide, setElemHide, hide, show)
+                    props.headerShowFunction()
                 }}
                 >
                     <div className='menu-dots dot-1'></div>
@@ -53,7 +46,6 @@ const MenuButton = () => {
                     <div className='menu-dots dot-4'></div>
                 </div>
             </div>
-            <ContentFolder hideContentFolder={() => setVisible(hideElem)} isVisible={isVisible} />
         </>
     )
 }

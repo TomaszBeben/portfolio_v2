@@ -1,0 +1,45 @@
+@import './mixins.scss';
+.github {
+    position: absolute;
+    background-image: url(../images/github-logo.png);
+    animation-name: moveGit;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+    @keyframes moveGit {
+        0% {
+            bottom: 100%;
+            left: 12%;
+        }
+        50% {
+            bottom: 80%;
+            left: 12%;
+        }
+        100% {
+            bottom: 85%;
+            left: 12%;
+        }
+    }
+}
+
+.linkedIn {
+    position: absolute;
+    left: 30%;
+    background-image: url(../images/linkedin.png);
+    animation-name: moveLinked;
+    animation-duration: 0.32s;
+    animation-fill-mode: forwards;
+    @keyframes moveLinked {
+        0% {
+            bottom: 100%;
+            left: 30%;
+        }
+        50% {
+            bottom: 80%;
+            left: 30%;
+        }
+        100% {
+            bottom: 85%;
+            left: 30%;
+        }
+    }
+}

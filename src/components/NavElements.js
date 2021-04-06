@@ -9,7 +9,7 @@ const elements = [
     { id: 1, mainClass: 'nav-elements-elem', indywidualClass: 'cv', route: '/cv' },
     { id: 2, mainClass: 'nav-elements-elem', indywidualClass: 'mailing', route: '/mailing' },
     { id: 3, mainClass: 'nav-elements-elem', indywidualClass: 'projects', route: '/projects' },
-    { id: 4, mainClass: 'nav-elements-elem', indywidualClass: 'about', route: '/about' },
+    { id: 4, mainClass: 'nav-elements-elem', indywidualClass: 'about', route: '/about' }
 ]
 
 const NavElements = (props) => {
@@ -26,7 +26,8 @@ const NavElements = (props) => {
                             ></div>
                         </Link>
                     ))}
-                </div></HashRouter>
+                </div>
+            </HashRouter>
         </>
     )
 }
