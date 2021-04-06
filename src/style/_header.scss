@@ -23,7 +23,7 @@
 
 .linkedIn {
     position: absolute;
-    left: 30%;
+    filter: grayscale(1);
     background-image: url(../images/linkedin.png);
     animation-name: moveLinked;
     animation-duration: 0.32s;

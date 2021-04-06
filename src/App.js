@@ -12,6 +12,9 @@ const App = () => {
   const hide = 'nav-elements-container hide'
   const [elemHide, setElemHide] = useState(hide)
 
+  const contentAnimationClass = 'content-component-animation'
+  const[contentAnimationState, setContentAnimationState] = useState('')
+
   const randomColor = {
     background: `${background}`
   };
@@ -20,8 +23,11 @@ const App = () => {
     <>
       <div className='main--Page--Background' style={randomColor}>
         <Header headerHide={elemHide}/>
-        <Content/>
-        <MenuButton headerShowFunction={()=>{toggle(elemHide, setElemHide, hide, show)}} />
+        <Content contentAnimation={contentAnimationState}/>
+        <MenuButton headerShowFunction={()=>{
+          toggle(elemHide, setElemHide, hide, show)
+          toggle(contentAnimationState, setContentAnimationState, '', contentAnimationClass)
+          }} />
       </div>
     </>
   );
