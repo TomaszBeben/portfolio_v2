@@ -1,0 +1,13 @@
+.blurred {
+    animation-name: blured;
+    animation-duration: 0.33s;
+    animation-fill-mode: forwards;
+    @keyframes blured {
+        0% {
+            filter: grayscale(0) blur(0px);
+        }
+        100% {
+            filter: grayscale(0.8) blur(5px);
+        }
+    }
+}

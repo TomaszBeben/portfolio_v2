@@ -32,6 +32,7 @@ const MenuButton = (props) => {
                     show={elemHide}
                     click={() => {
                         toggle(elemHide, setElemHide, hide, show)
+                        props.headerShowFunction()
                     }}
                 />
                 <div className={rotate} onClick={() => {

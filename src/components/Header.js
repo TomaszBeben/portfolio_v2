@@ -6,7 +6,8 @@ const Header = (props) => {
         width: '95%',
         border: '1px solid black',
         marginLeft: 'auto',
-        marginRight: 'auto'
+        marginRight: 'auto',
+        filter: 'blur(0) !important'
     }
     return (
         <div style={style}>

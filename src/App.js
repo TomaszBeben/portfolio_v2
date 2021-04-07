@@ -8,6 +8,7 @@ import { background } from './components/Variables'
 
 
 const App = () => {
+
   const show = 'nav-elements-container'
   const hide = 'nav-elements-container hide'
   const [elemHide, setElemHide] = useState(hide)
@@ -15,18 +16,26 @@ const App = () => {
   const contentAnimationClass = 'content-component-animation'
   const[contentAnimationState, setContentAnimationState] = useState('')
 
+  const blurredClass = 'blurred'
+  const[blurred, setBlurred] =useState('')
+
   const randomColor = {
-    background: `${background}`
+    background: `${background}`,
+    position: 'fixed',
+    width: '100vw',
+    height: '100%'
   };
 
   return (
     <>
-      <div className='main--Page--Background' style={randomColor}>
+      <div className={blurred} style={randomColor}></div>
+      <div className='main--Page--Background'>
         <Header headerHide={elemHide}/>
         <Content contentAnimation={contentAnimationState}/>
         <MenuButton headerShowFunction={()=>{
           toggle(elemHide, setElemHide, hide, show)
           toggle(contentAnimationState, setContentAnimationState, '', contentAnimationClass)
+          toggle(blurred, setBlurred, '', blurredClass)
           }} />
       </div>
     </>
