@@ -1,0 +1,33 @@
+.about-component {
+    height: 100%;
+    width: 100%;
+}
+
+.about-component-header {
+    font-size: 6rem;
+    text-align: center;
+    padding: 4vh 0 0 0;
+}
+
+.about-component-text {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4vh 0 5vh 0;
+    font-size: 2rem;
+}
+
+.about-component-imgOfMyself {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    background-image: url(../images/me.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 40% 2%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
