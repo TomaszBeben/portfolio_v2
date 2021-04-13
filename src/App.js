@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import Content from './components/Content';
-import Header from './components/Header';
-import MenuButton from './components/MenuButton';
-import { toggle } from './components/GlobalFunction';
-import { background } from './components/Variables'
+import Content from './components/Content'
+import Header from './components/Header'
+import MenuButton from './components/MenuButton'
+import { toggle } from './components/GlobalFunction'
+import { randomColor } from './components/Variables'
 
 
 const App = () => {
@@ -18,13 +18,6 @@ const App = () => {
 
   const blurredClass = 'blurred'
   const[blurred, setBlurred] =useState('')
-
-  const randomColor = {
-    background: `${background}`,
-    position: 'fixed',
-    width: '100vw',
-    height: '100%'
-  };
 
   return (
     <>
@@ -42,4 +35,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App

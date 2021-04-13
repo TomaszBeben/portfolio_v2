@@ -1,6 +1,9 @@
-.content-cvComponent {
-    width: 100%;
-    height: 100%;
-    font-size: 52px;
-    background-color: green
+@import './mixins.scss';
+@include customScroll;
+.pl-cv {
+    background-image: url(../images/plFlag.jpg);
+}
+
+.en-cv {
+    background-image: url(../images/enFlag.jpg);
 }

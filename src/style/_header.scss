@@ -1,3 +1,16 @@
+.header-links {
+    position: relative;
+    height: 15%;
+    width: 95%;
+    border: 1px solid black; // remove this after finish
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 990px) {
+        width: 35% !important;
+        height: 15%;
+    }
+}
+
 .github {
     position: absolute;
     background-image: url(../images/github-logo.png);
@@ -7,15 +20,15 @@
     @keyframes moveGit {
         0% {
             bottom: 100%;
-            left: 12%;
+            left: 2%;
         }
         50% {
-            bottom: 80%;
-            left: 12%;
+            bottom: 5%;
+            left: 2%;
         }
         100% {
-            bottom: 85%;
-            left: 12%;
+            bottom: 25%;
+            left: 2%;
         }
     }
 }
@@ -33,11 +46,11 @@
             left: 30%;
         }
         50% {
-            bottom: 80%;
+            bottom: 5%;
             left: 30%;
         }
         100% {
-            bottom: 85%;
+            bottom: 25%;
             left: 30%;
         }
     }

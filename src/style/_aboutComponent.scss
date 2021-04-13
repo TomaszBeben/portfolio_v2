@@ -7,15 +7,17 @@
     font-size: 6rem;
     text-align: center;
     padding: 4vh 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .about-component-text {
-    width: 90%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 4vh 0 5vh 0;
     font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
 }
 
 .about-component-imgOfMyself {
@@ -23,6 +25,7 @@
     width: 15rem;
     height: 15rem;
     background-image: url(../images/me.jpg);
+    box-shadow: 0 12px 16px 0 black, 0 17px 50px 0 rgb(70, 70, 70);
     border-radius: 50%;
     background-size: cover;
     background-position: 40% 2%;

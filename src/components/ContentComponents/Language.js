@@ -4,8 +4,8 @@ export const language={
         en: "My name is Tomasz Beben and I like programming. I've been learning React for over a year now and I think it's time to show what I ve learned.Welcome to my website :)"
     },
     cv:{
-        pl: 'polskie CV',
-        en: 'english CV'
+        pl: 'W tym miejscu możesz pobrać moje CV',
+        en: 'This is a place where you can download my CV'
     },
     mailingComponent:{
         pl:'polskie napisy',

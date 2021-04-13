@@ -10,3 +10,17 @@
         box-shadow: 0 0 1em white;
     }
 }
+
+@mixin customScroll {
+     ::-webkit-scrollbar {
+        width: 15px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 20px;
+    }
+     ::-webkit-scrollbar-track {
+        background: opacity(1);
+        border-radius: 20px;
+    }
+}

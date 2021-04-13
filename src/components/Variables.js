@@ -1,6 +1,6 @@
-import {random} from './GlobalFunction';
+import {random} from './GlobalFunction'
 
-export const background = `linear-gradient(
+const background = `linear-gradient(
     ${random(360)}deg,
     rgba(
       ${random(256)},
@@ -15,4 +15,10 @@ export const background = `linear-gradient(
       ${random(256)},
       ${random(256)},
       ${random(256)},1) 100%)`
-  ;
+
+export const randomColor = {
+  background: `${background}`,
+  position: 'fixed',
+  width: '100vw',
+  height: '100%'
+}

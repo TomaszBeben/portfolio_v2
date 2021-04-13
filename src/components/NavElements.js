@@ -5,7 +5,7 @@ import {
     Link
 } from "react-router-dom";
 
-const elements = [
+const navElements = [
     { id: 1, mainClass: 'nav-elements-elem', indywidualClass: 'cv', route: '/cv' },
     { id: 2, mainClass: 'nav-elements-elem', indywidualClass: 'mailing', route: '/mailing' },
     { id: 3, mainClass: 'nav-elements-elem', indywidualClass: 'projects', route: '/projects' },
@@ -18,7 +18,7 @@ const NavElements = (props) => {
         <>
             <HashRouter>
                 <div className={props.show}>
-                    {elements.map((elem) => (
+                    {navElements.map((elem) => (
                         <Link key={elem.id} to={elem.route}>
                             <div
                                 className={elem.mainClass + ' ' + elem.indywidualClass}
