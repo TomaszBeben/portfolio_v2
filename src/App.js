@@ -6,7 +6,6 @@ import MenuButton from './components/MenuButton'
 import { toggle } from './components/GlobalFunction'
 import { randomColor } from './components/Variables'
 
-
 const App = () => {
 
   const show = 'nav-elements-container'
@@ -14,22 +13,37 @@ const App = () => {
   const [elemHide, setElemHide] = useState(hide)
 
   const contentAnimationClass = 'content-component-animation'
-  const[contentAnimationState, setContentAnimationState] = useState('')
+  const [contentAnimationState, setContentAnimationState] = useState('')
 
   const blurredClass = 'blurred'
-  const[blurred, setBlurred] =useState('')
+  const [blurred, setBlurred] = useState('')
+
+  const boxShadowForContentStyle = 'content-component-box-shadow'
+  const [boxShadowForContent, setBoxShadowForContent] = useState('')
+
+  const addressCheck = () =>
+  window.location.hash === '#/' ?
+  setBoxShadowForContent(''):
+  setBoxShadowForContent(boxShadowForContentStyle)
+
+  setInterval(addressCheck,100)
 
   return (
     <>
       <div className={blurred} style={randomColor}></div>
       <div className='main--Page--Background'>
-        <Header headerHide={elemHide}/>
-        <Content contentAnimation={contentAnimationState}/>
-        <MenuButton headerShowFunction={()=>{
+        <Header
+        headerHide={elemHide}
+        />
+        <Content
+        contentBoxShadowVisible={boxShadowForContent}
+        contentAnimation={contentAnimationState}
+        />
+        <MenuButton headerShowFunction={() => {
           toggle(elemHide, setElemHide, hide, show)
           toggle(contentAnimationState, setContentAnimationState, '', contentAnimationClass)
-          toggle(blurred, setBlurred, '', blurredClass)
-          }} />
+          toggle(blurred, setBlurred, '', blurredClass)}}
+        />
       </div>
     </>
   );

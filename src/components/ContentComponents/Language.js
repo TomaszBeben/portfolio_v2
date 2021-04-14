@@ -12,7 +12,13 @@ export const language={
         en: 'english subtitles'
     },
     projects:{
-        pl: 'polskie opisy',
-        en: 'english descriptions'
+        pl:{
+            top: 'Moje projekty',
+            bottom: 'Kidyś będzie ich więcej, wystarczy poczekać :)'
+        },
+        en:{
+            top: 'My projects',
+            bottom: 'will be more, just wait :)'
+        }
     }
 }

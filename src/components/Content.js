@@ -9,7 +9,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom'
 
 const Content = (props) => {
     return (
-        <div className={`content-component ${props.contentAnimation}`}>
+        <div className={`content-component ${props.contentBoxShadowVisible} ${props.contentAnimation}`}>
         <HashRouter>
             <Switch>
                 <Route exact path='/about' component={AboutComponent}></Route>
