@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 
 
-export default function ContactUs() {
+const MailingComponent = () => {
 
   function sendEmail(e) {
     e.preventDefault();
@@ -16,15 +16,17 @@ export default function ContactUs() {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="text" name="user_email" />
-      <label>Message</label>
-      <textarea wrap='soft' cols='50' rows='5' name="message" />
-      <input type="submit" value="Send" />
+    <form className="mailing-component-container" onSubmit={sendEmail}>
+      <input  type="hidden" name="contact_number" />
+      <label className='mailing-component-labels'>Name</label>
+      <input className='mailing-component-input' type="text" name="user_name" />
+      <label className='mailing-component-labels'>Email</label>
+      <input className='mailing-component-input' type="email" name="user_email" />
+      <label className='mailing-component-labels'>Message</label>
+      <textarea className='mailing-component-text' name="message" />
+      <input className='mailing-component-button' type="submit" value="Send" />
     </form>
   );
 }
+
+export default MailingComponent
