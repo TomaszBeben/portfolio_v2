@@ -8,13 +8,30 @@ export const language={
         en: 'This is a place where you can download my CV'
     },
     mailingComponent:{
-        pl:'polskie napisy',
-        en: 'english subtitles'
+        pl:{
+            header: 'Chcesz się ze mną skontaktować? Wystarczy, że wypełnisz formularz',
+            name: 'imię',
+            email: 'email',
+            message: 'wiadomość',
+            hiddenMessage: 'Dzięki za wiadomość, odpiszę najszybciej jak się da :)',
+            err: 'Wypełnij proszę poprawnie wszystki pola :)',
+            button: 'Wyślij'
+
+        },
+        en:{
+            header: 'You can get in touch with me, just fill the form',
+            name: 'name',
+            email: 'email',
+            message: 'message',
+            hiddenMessage: 'Dzięki za wiadomość, odpiszę najszybciej jak się da :)',
+            err: 'Fill in all the fields correctly',
+            button: 'Send'
+        }
     },
     projects:{
         pl:{
             top: 'Moje projekty',
-            bottom: 'Kidyś będzie ich więcej, wystarczy poczekać :)'
+            bottom: 'Kiedyś będzie ich więcej, wystarczy poczekać :)'
         },
         en:{
             top: 'My projects',
