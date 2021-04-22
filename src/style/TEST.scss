@@ -1,0 +1,18 @@
+.point {
+    box-shadow: white 0 0 1rem 10px;
+    animation-name: snowflake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    @keyframes snowflake {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        100% {
+            left: 100%;
+            top: 0px;
+        }
+    }
+}

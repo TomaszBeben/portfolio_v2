@@ -5,6 +5,7 @@ import Header from './components/Header'
 import MenuButton from './components/MenuButton'
 import { toggle } from './components/GlobalFunction'
 import { randomColor } from './components/Variables'
+import Test from './components/Test'
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
 
   return (
     <>
+      {/* <Test/> */}
       <div className={blurred} style={randomColor}></div>
       <div className='main--Page--Background'>
         <Header
