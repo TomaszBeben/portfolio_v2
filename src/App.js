@@ -5,7 +5,8 @@ import Header from './components/Header'
 import MenuButton from './components/MenuButton'
 import { toggle } from './components/GlobalFunction'
 import { randomColor } from './components/Variables'
-import Test from './components/Test'
+import ContainerOfSnowflakes from './components/ContainerOfSnowflakes'
+import OneSnowflake from './components/OneSnowflake'
 
 const App = () => {
 
@@ -31,7 +32,7 @@ const App = () => {
 
   return (
     <>
-      {/* <Test/> */}
+      {/* <ContainerOfSnowflakes/> */}
       <div className={blurred} style={randomColor}></div>
       <div className='main--Page--Background'>
         <Header

@@ -2,12 +2,14 @@ import React,{useState, useEffect} from 'react'
 
 import {random} from './GlobalFunction'
 
-const Test = () => {
+
+
+const OneSnowflake = (props) => {
     const [num, setNum] = useState(-1)
     useEffect(()=>{
         const interval = setInterval(()=>{
             num >= 100 ? setNum(-1) : setNum(num+0.1)
-        },1000);
+        },100);
         return()=> clearInterval(interval)
     })
     const size = '40'
@@ -15,10 +17,10 @@ const Test = () => {
         width: `${size}px`,
         height: `${size}px`,
         border: '1px solid black',
-        position: 'absolute',
+        position: 'auto',
         zIndex: '1',
         top: `${num}vh`,
-        left: '10%'
+        left: `${props.snowflakePosition}%`
     }
     const point = {
         position: 'relative',
@@ -26,7 +28,8 @@ const Test = () => {
         height: '1px',
         borderRadius: '50%',
         border: '1px solid white',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        keyframes: ''
     }
 
     const test = {
@@ -44,4 +47,4 @@ const Test = () => {
     )
 }
 
-export default Test
+export default OneSnowflake
