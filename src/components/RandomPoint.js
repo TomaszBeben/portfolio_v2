@@ -1,24 +1,34 @@
 import React from 'react'
 
 import styled, { keyframes } from 'styled-components'
+import {random} from './GlobalFunction'
 
 const RandomPoint = () => {
 
+    const direction = ['left', 'right', 'top', 'bottom']
+    const dirOne = direction[random(4)];
+    const dirTwo = direction[random(4)];
+
+
     const move = keyframes`
     0%{
-        background-color: white;
+        
+        ${dirOne}: 0%;
+        ${dirTwo}: ${random(150)}%;
     }
     100%{
-        background-color: black;
+        ${dirOne}: ${random(150)}%;
+        ${dirTwo}: ${random(150)}%;
     }
     `
-
-    const OnePoint = styled.div `
+    console.log(random(2));
+    const OnePoint = styled.div`
         position: absolute;
+        z-index: 1;
         border: 1px solid black;
         width: 100px;
         height: 100px;
-        animation-duration: 2s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
         animation-timing-function: ease-in-out;
@@ -26,9 +36,8 @@ const RandomPoint = () => {
     `
     return (
         <>
-        <OnePoint>?</OnePoint>
+            <OnePoint></OnePoint>
         </>
-        
     )
 }
 
