@@ -65,15 +65,18 @@ const MailingComponent = () => {
           toggle(textButton, setTextButton, text.mailingComponent.en.button, text.mailingComponent.pl.button)
         }}>{languageButton}
       </button>
-      <form className="mailing-component-container" onSubmit={sendEmail}>
-        <h1 className='mailing-component-message-for-user'>{textHeader}</h1>
-        <input type="hidden" name="contact_number" />
-        <input className='mailing-component-input input' type='text' placeholder={textName} value={name} name="user_name" onChange={e => setName(e.target.value)} />
-        <input className='mailing-component-input input' type='email' placeholder={textEmail} value={email} name="user_email" onChange={e => setEmail(e.target.value)} />
-        <textarea className='mailing-component-text input' placeholder={textMessage} value={message} name="message" onChange={e => setMessage(e.target.value)} />
-        <input className='mailing-component-button' type="submit" value={textButton} />
-        <h1 className='mailing-component-message-for-user'>{messageForUser}</h1>
-      </form>
+      <div className='mailing-component-form-container'>
+        <form className="mailing-component-container" onSubmit={sendEmail}>
+          <h1 className='mailing-component-message-for-user'>{textHeader}</h1>
+          <input type="hidden" name="contact_number" />
+          <input className='mailing-component-input input' type='text' placeholder={textName} value={name} name="user_name" onChange={e => setName(e.target.value)} />
+          <input className='mailing-component-input input' type='email' placeholder={textEmail} value={email} name="user_email" onChange={e => setEmail(e.target.value)} />
+          <textarea className='mailing-component-text input' placeholder={textMessage} value={message} name="message" onChange={e => setMessage(e.target.value)} />
+          <input className='mailing-component-button' type="submit" value={textButton} />
+          <h1 className='mailing-component-message-for-user'>{messageForUser}</h1>
+        </form>
+      </div>
+
     </>
   );
 }
