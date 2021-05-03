@@ -1,6 +1,10 @@
 html {
     width: 100vw !important;
     text-shadow: 1px 1px 1px grey;
+    @media (orientation: landscape) {
+        z-index: 1000;
+        background-color: burlywood;
+    }
 }
 
 .main--Page--Background {

@@ -37,10 +37,14 @@ const App = () => {
 
   return (
     <>
-      <div className={blurred} style={randomColor}>
+      <div
+      className={blurred}
+      style={randomColor}
+      onClick={()=> {toggle(blurred, setBlurred, '', blurredClass)}}
+      >
         <Snowfall
           color='white'
-          snowflakeCount={25}
+          snowflakeCount={30}
           wind={snowfallWind}
           speed={snowfallSpeed}
           radius={[1, 5]}
